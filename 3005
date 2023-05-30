@@ -1,0 +1,80 @@
+#Exemplo 1
+'''
+l_numeros = []
+numero = int(input("Informe um número: "))
+while(numero!= -1):
+    l_numeros.append(numero)
+    numero = int(input("Informe um número: "))
+
+print("Quantidade de números: ",len(l_numeros)) 
+print("Soma dos numeros: ",sum(l_numeros))  
+print("Média dos números: ",sum(l_numeros)/len(l_numeros))
+
+
+#Exemplo 2
+l_notas = []
+nota = int(input("Informe uma nota: "))
+while(nota!= -1):
+    l_notas.append(nota)
+    nota = int(input("Informe uma nota: "))
+
+if(len(l_notas)>0):
+    print("Quantidade de Alunos: ",len(l_notas)) 
+    print("Soma das Notas: ",sum(l_notas))  
+    print(f"Média da turma: {(sum(l_notas)/len(l_notas)):.2}")
+else:
+    print("Nenhuma nota informada.")
+
+#Exemplo 3
+l_pares = []
+numero = int(input("Informe um numero: "))
+while(numero!= 0):
+    if(numero%2==0):
+        l_pares.append(numero)
+
+    numero = int(input("Informe um numero: "))
+
+if(len(l_pares)>0):
+    print("Quantidade de pares: ",len(l_pares)) 
+    print("Soma dos pares: ",sum(l_pares))  
+    print(f"Média dos numeros pares: {(sum(l_pares)/len(l_pares)):.2}")
+else:
+    print("Nenhuma numero par informado.")
+
+#Exemplo 4
+l_pares = []
+l_impares = []
+numero = int(input("Informe um numero: "))
+while(numero!= 0):
+    if(numero%2==0):
+        l_pares.append(numero)
+    else:
+        l_impares.append(numero)
+    
+
+    numero = int(input("Informe um numero: "))
+
+if(len(l_pares)>0): 
+    print(f"Média dos numeros pares: {(sum(l_pares)/len(l_pares)):.2}")
+else:
+    print("Não há número par.")
+
+if(len(l_impares)):
+    print(f"Média dos numeros impares: {(sum(l_impares)/len(l_impares)):.2}")
+else:
+    print("Não há número ímpar.")
+'''
+#Exemplo 5
+l_numeros = []
+numero = int(input("Informe um número: "))
+while(numero!= -1):
+    l_numeros.append(numero)
+    numero = int(input("Informe um número: "))
+
+if(len(l_numeros)>0):
+    print("O menor valor é: ", min(l_numeros))
+    print("O maior valor é: ", max(l_numeros))
+    print("A quantidade de valores é: ",len(l_numeros))
+    print("A soma dos números é: ",sum(l_numeros))
+else:
+    print("Não foi informado nenhum número.")
